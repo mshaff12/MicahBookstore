@@ -1,0 +1,61 @@
+#book-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em 7em;
+  column-gap: 11rem;
+  background-color: white;
+}
+
+.book-box {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 0.25em;
+  flex-wrap: wrap;
+  max-width: 130px;
+}
+
+.book-title {
+  font-weight: 600;
+  font-size: 14px;
+  max-height: 2rem;
+  color: black
+}
+
+.book-price {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 12px;
+  color: black
+}
+
+.book-author {
+  font-size: 12px;
+  max-height: 1rem;
+  color: black;
+  font-weight: 500;
+}
+
+.add-to-cart-button {
+  font-size: 12px;
+  border-radius: 20px;
+  width: 100px;
+  padding: .2rem 0rem;
+  text-align: center;
+}
+
+.read-now-button {
+  transform: translateY(-3.2em) translateX(2.55rem);
+  font-size: 24px;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  text-align: center;
+  padding-top: 0.65rem;
+  padding-left: 0.05rem;
+  opacity: 0.85;
+}
+
+.book-image {
+  height: 200px;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kingdom Scholastic</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The homepage for My Bookstore" />
+
+    <!-- Import font-awesome icons -->
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <!-- order of CSS files is important (this is the "Cascade" part of CSS) -->
+
+    <!-- global.css contains resets, custom properties, and utility classes -->
+    <link rel="stylesheet" href="css/global.css" />
+
+    <!-- start from the top-level component and work your way down -->
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/app-header.css" />
+    <link rel="stylesheet" href="css/header-dropdown.css" />
+    <link rel="stylesheet" href="css/app-footer.css" />
+    <link rel="stylesheet" href="css/home.css" />
+
+    <style>
+      body {
+        background-image: url("images/site/way-of-kings.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class = "welcome-cover">
+      <header class="container welcome-header">
+        <section class="bookstore-logo">
+          <a href="index.html">
+            <i class="fa-solid fa-chess-rook" style="color:white"></i>
+          </a>
+          <h1 class="text-logo" style="color:white">KINGDOM SCHOLASTIC</h1>
+        </section>
+        <section class="search-bar-and-icon">
+          <form action="category.html">
+            <!-- <input type="submit" class="button search-button" value="Search" /> -->
+            <button type="submit" class="button search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+            <input type="text" class="search-bar" /><br />
+          </form>
+        </section>
+        <section class="header-dropdown-and-cart">
+          <button class="button sign-in-button">Sign In</button>
+          <section class="header-icons">
+            <i class="fa-solid fa-circle-user" style="color:white"></i>
+            <i class="fa-solid fa-cart-shopping" style="font-size: 38px; color:white" ></i>
+            <div class="cart-number" style="color:black">0</div>
+            <div class="header-dropdown">
+              <i class="fa-solid fa-bars" style="font-size: 46px; color:white"></i>
+              <ul>
+                <li><a href="category.html?category=BestSellers">Best Sellers</a></li>
+                <li><a href="category.html?category=Fantasy">Fantasy</a></li>
+                <li><a href="category.html?category=Scifi">Sci-fi</a></li>
+                <li><a href="category.html?category=Romance">Romance</a></li>
+                <li><a href="category.html?category=Nonfiction">Nonfiction</a></li>
+                <li><a href="category.html?category=Thriller">Thriller</a></li>
+                <li><a href="category.html?category=Romance">Romance</a></li>
+                <li><a href="category.html?category=Manga">Manga</a></li>
+              </ul>
+            </div>
+          </section>
+        </section>
+      </header>
+      <div class="flex-wrapper">
+        <div class="home-page">
+          <section class="welcome-text flow-content container">
+            <h2>Welcome to the literary kingdom.</h2>
+            <p>
+              Shop the Collection
+            </p>
+            <button class="button browse-button">BROWSE BOOKS</button>
+          </section>
+        </div>
+        <footer class="container">
+          <section class="copyright" >
+            <i class="fa-regular fa-copyright" style="font-size:1.5rem; color:white" ></i>
+            <p class="copyright-text" style="color:white">
+              2022 Kingdom Scholastic
+            </p>
+          </section>
+          <section class="links">
+            <a href="index.html" style="color:white">Contact</a>
+            <div class="link-separator" style="color:white">|</div>
+            <a href="index.html" style="color:white">Directions</a>
+            <!-- <a href="index.html" style="font-size:20px" >Contact</a>
+            <a href="index.html" style="font-size:20px">Directions</a> -->
+          </section>
+          <section class="social-media-icons">
+            <i class="fa-brands fa-facebook" style="font-size:2rem; color:white"></i>
+            <i class="fa-brands fa-instagram" style="font-size:2rem; color:white"></i>
+            <i class="fa-brands fa-twitter" style="font-size:2rem; color:white"></i>
+          </section>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+footer {
+  display: flex;
+  gap: 1em;
+  justify-content: space-between;
+  height: 3rem;
+  align-items: center;
+  color: #83677B;
+  bottom: 0;
+  width: 100%;
+  position:fixed;
+}
+
+.category-footer {
+  background-color: #CCCCCC;
+}
+
+.copyright {
+  display:flex;
+  gap: 0.5rem;
+  padding-left: 1rem;
+}
+
+.links {
+  display: flex;
+  gap:1rem;
+  text-decoration: none;
+  font-size: 20px;
+  color: #83677B;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  padding-right: 1rem;
+  cursor: pointer
+}
+
+.copyright-text {
+  transform: translateY(0.09rem);
+}

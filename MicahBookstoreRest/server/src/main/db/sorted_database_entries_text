@@ -1,0 +1,134 @@
+DELETE FROM book;
+ALTER TABLE book AUTO_INCREMENT = 1001;
+
+DELETE FROM category;
+ALTER TABLE category AUTO_INCREMENT = 1001;
+
+INSERT INTO `category` (`name`) VALUES ('Fantasy'), ('Sci-fi'), ('Nonfiction'), ('Thriller'), ('Romance'), ('Manga');
+
+INSERT INTO `book` (title, author, price, is_public, is_featured, category_id)
+VALUES ('The Way of Kings', 'Brandon Sanderson', 2999, FALSE, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Words of Radiance', 'Brandon Sanderson', 1467, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Name of the Wind', 'Patrick Rothfuss', 2528, FALSE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Harry Potter and the Deathly Hallows', 'J K Rowling', 1850, FALSE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, is_featured, category_id)
+VALUES ('The Fellowship of the Ring', 'J. R. R. Tolkien', 1299, FALSE, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Gardens of the moon', 'Steven Erikson', 2030, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Skyward', 'Brandon Sanderson', 1011, FALSE, 1002);
+
+INSERT INTO `book` (title, author, price, is_public, is_featured, category_id)
+VALUES ('Dune', 'Frank Herbert', 1201, TRUE, TRUE, 1002);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Martian', 'Andy Weir', 1338, FALSE, 1002);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Brave New World', 'Aldous Huxley', 1153, TRUE, 1002);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Time Machine', 'H. G. Wells', 595, TRUE, 1002);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('A Wrinkle in Time', 'Madelein L''Engle', 699, FALSE, 1002);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Immortal Life of Henrietta Lacks', 'Rebecca Skloot', 1432, TRUE, 1003);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Secret History of Food', 'Matt Siegel', 1789, TRUE, 1003);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Puritan Dilemma', 'Edmund Morgan', 1015, TRUE, 1003);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Hidden Figures', 'Margot Lee Shetterly', 1017, FALSE, 1003);
+
+INSERT INTO `book` (title, author, price, is_public, is_featured, category_id)
+VALUES ('AI 2041', 'Kai-Fu Lee', 2149, FALSE, TRUE, 1003);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Algorithms to Live By', 'Brian Christian', 1369, TRUE, 1003);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Devil All the Time', 'Donald Ray Pollock', 999, FALSE, 1004);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Stand', 'Stephen King', 1187, TRUE, 1004);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Misery', 'Stephen king', 1369, TRUE, 1004);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Girl with the Dragon Tattoo', 'Stieg Larsson', 999, TRUE, 1004);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Hunger Games', 'Suzanne Collins', 749, FALSE, 1004);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Maze Runner', 'James Dashner', 501, TRUE, 1004);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Wuthering Heights', 'Emily Bronte', 619, TRUE, 1005);
+
+INSERT INTO `book` (title, author, price, is_public, is_featured, category_id)
+VALUES ('Pride and Prejudice', 'Jane Austen', 999, TRUE, TRUE, 1005);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Fault in Our Stars', 'John Green', 610, FALSE, 1005);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Hating Game', 'Sally Thorne', 1244, FALSE, 1005);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Notebook', 'Nicholas Sparks', 999, FALSE, 1005);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Beach Read', 'Emily Henry', 1199, FALSE, 1005);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Berserk, Vol. 1', 'Kentaro Miura', 1349, FALSE, 1006);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('My Hero Academia, Vol. 2', 'Kouhei Horikoshi', 765, TRUE, 1006);
+
+INSERT INTO `book` (title, author, price, is_public, is_featured, category_id)
+VALUES ('One Piece, Vol. 100', 'Eiichiro Oda', 999, TRUE, TRUE, 1006);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Tokyo Ghoul, Vol. 14', 'Sui Ishida', 1099, TRUE, 1006);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Akira, Vol. 1', 'Katsuhiro Otomo', 2249, FALSE, 1006);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('All You Need Is Kill', 'Ryosuke Takeuchi', 1499, TRUE, 1006);
+
+Best Sellers
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Way of Kings', 'Brandon Sanderson', 2999, FALSE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('The Fellowship of the Ring', 'J. R. R. Tolkien', 1299, FALSE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Dune', 'Frank Herbert', 1201, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('Pride and Prejudice', 'Jane Austen', 999, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('One Piece, Vol. 100', 'Eiichiro Oda', 999, TRUE, 1001);
+
+INSERT INTO `book` (title, author, price, is_public, category_id)
+VALUES ('AI 2041', 'Kai-Fu Lee', 2149, FALSE, 1001);
